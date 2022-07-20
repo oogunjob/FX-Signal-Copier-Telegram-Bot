@@ -1,1 +1,1 @@
-# FX-Signal-Copier-Telegram-Bot
+# FX Signal Copier Telegram Bot
