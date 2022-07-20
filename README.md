@@ -6,9 +6,9 @@ The FX Signal Copier Telegram Bot makes use of the MetaAPI cloud forex trading A
 
 Official REST and websocket API documentation for MetaAPI: https://metaapi.cloud/docs/client/
 
+# Demonstration
 
+YouTube Video Showing Demonstration Will Be Coming Soon
 
-
-
-
+# Installation
 
