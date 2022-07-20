@@ -41,7 +41,7 @@ Linux/MacOS: source fx_telegram_bot/bin/activate
 Windows: source fx_telegram_bot/Scripts/activate
 ```
 
-**4. Install pip packages**
+**4. Install pip packagess in virtual environment**
 ```bash
 pip install metaapi_cloud_sdk prettytable python-telegram-bot
 ```
