@@ -8,7 +8,7 @@ Official REST and WebSocket API documentation for MetaAPI: https://metaapi.cloud
 
 This bot is deployed using Heroku.
 
-# Demonstration
+# Demonstration 🎥
 
 YouTube Video Showing Demonstration Will Be Coming Soon
 
