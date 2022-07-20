@@ -1,10 +1,10 @@
 # FX Signal Copier Telegram Bot 💻💸
 
-This Telegram bot allow users to enter trades directly from Telegram and get a detailed look at risk to reward ratio with profit, loss, and calculated lot size. You are able to change specific settings such as allowed symbols, risk factor, and more from your personalized Python script and enviornement variables.
+This Telegram bot allows users to enter trades directly from Telegram and get a detailed look at the risk-to-reward ratio with profit, loss, and calculated lot size. You can change specific settings such as allowed symbols, risk factor, and more from your personalized Python script and environment variables.
 
-The FX Signal Copier Telegram Bot makes use of the MetaAPI cloud forex trading API for MetaTrader 4 and MetaTrader 5 to create a connection to a user's MetaTrader account in order to gather information such as account balance, open positions and permissions to enter and close trades.
+The FX Signal Copier Telegram Bot makes use of the MetaAPI cloud forex trading API for MetaTrader 4 and MetaTrader 5 to create a connection to a user's MetaTrader account to gather information such as account balance, open positions, and permissions to enter and close trades.
 
-Official REST and websocket API documentation for MetaAPI: https://metaapi.cloud/docs/client/
+Official REST and WebSocket API documentation for MetaAPI: https://metaapi.cloud/docs/client/
 
 This bot is deployed using Heroku.
 
@@ -35,7 +35,7 @@ cd telegram_bot
 python3 -m venv fx_telegram_bot
 ```
 
-**3. Activate virtual enviornment**
+**3. Activate virtual environment**
 ```bash
 Linux/MacOS: source fx_telegram_bot/bin/activate
 Windows: source fx_telegram_bot/Scripts/activate
@@ -46,14 +46,14 @@ Windows: source fx_telegram_bot/Scripts/activate
 pip install metaapi_cloud_sdk prettytable python-telegram-bot
 ```
 
-**5. Clone FX Signal Copier Telegram Bot to enviornment**
+**5. Clone FX Signal Copier Telegram Bot to environment**
 ```bash
 git clone https://github.com/oogunjob/FX-Signal-Copier-Telegram-Bot.git
 ```
 
 **6. Set Up Heroku App**
 
-Navigate to Heroku web app and create a new application with a unique name. Upon creation, go to app settings and navigate to **Config Vars**. Add the following environment  variables (case-sensitive) for key and value excluding quotes.
+Navigate to Heroku web app and create a new application with a unique name. Upon creation, go to app settings and navigate to **Config Vars**. Add the following environment variables (case-sensitive) for key and value excluding quotes.
 
 |Key  | Value |
 | ------------- | ------------- |
