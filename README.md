@@ -78,3 +78,8 @@ git push heroku master
 If at any point you decide to make a change to any of the environment variables, all you have to do is navigate to the Heroku web app and edit the value. After making the change and saving, the application will automatically deploy with the new changes.
 
 **Congratulations!** 🥳 If you followed these steps correctly, you should now be able to open a conversation with your bot on Telegram and calculate trade risks along with placing trades. For help on how to use the bot, send the /help command for bot instructions and example trades.
+
+# License 📝
+&copy; 2022 Tosin Ogunjobi. All rights reserved.
+
+Licensed under the MIT license.
