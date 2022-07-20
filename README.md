@@ -83,8 +83,8 @@ If at any point you decide to make a change to any of the environment variables,
 - Copy trades directly from Signal providers or personal analysis 
 - Interact with MetaAPI to retrieve MT4/MT5 account information (Balance, Equity, Open Positions, etc.)
 - Place all 6 order type trades from Telegram bot (Market Buy/Sell, Limit Buy/Sell, Buy/Sell Stop)
-- Calcualte risk-to-reward using stop loss and take profit and display size in pips and profit/loss (USD)
-- Place up to two take profits and use half position size for each to maintain risk-to-reward ratio
+- Calculate risk-to-reward using stop loss and take profit and display size in pips and profit/loss (USD)
+- Place up to two take profits and use half position size for each to maintain the risk-to-reward ratio
 - Future Features: Trade confirmation, multiple TPs, trailing stop loss
 
 # License 📝
