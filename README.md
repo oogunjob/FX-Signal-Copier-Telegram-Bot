@@ -75,4 +75,4 @@ git commit -am "first deployment"
 git push heroku master
 ```
 
-**Congratulations!** 🥳 If you followed these steps correctly, you should now be able to open a conversation with your bot on Telegram and place trades. For help on how to use the bot, send the /help command for bot instructions and example trades.
+**Congratulations!** 🥳 If you followed these steps correctly, you should now be able to open a conversation with your bot on Telegram and calculate trade risks along with placing trades. For help on how to use the bot, send the /help command for bot instructions and example trades.
