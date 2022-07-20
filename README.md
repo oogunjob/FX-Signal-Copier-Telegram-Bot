@@ -60,8 +60,8 @@ Navigate to Heroku web app and create a new application with a unique name. Upon
 | TOKEN  | "INSERT TELEGRAM BOT API TOKEN HERE"  |
 | APP_NAME  | "https://[INSERT NAME OF APP HERE].herokuapp.com/"  |
 | TELEGRAM_USER  | "INSERT TELEGRAM USERNAME HERE"  |
-| API_KEY  | "INSERT META API TOKEN HERE" (NOTE: Can be found here, https://app.metaapi.cloud/token)  |
-| ACCOUNT_ID  | "INSERT TELEGRAM BOT API TOKEN HERE"  |
+| API_KEY  | "INSERT META API TOKEN HERE (https://app.metaapi.cloud/token)"  |
+| ACCOUNT_ID  | "INSERT META API ACCOUNT ID HERE"  |
 | RISK_FACTOR  | "INSERT PERCENTAGE OF RISK PER TRADE HERE IN DECIMAL FORM, ex: 5% = 0.05"  |
 
 **6. Deploy Heroku App**
