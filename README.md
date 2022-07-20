@@ -79,6 +79,8 @@ If at any point you decide to make a change to any of the environment variables,
 
 **Congratulations!** 🥳 If you followed these steps correctly, you should now be able to open a conversation with your bot on Telegram and calculate trade risk-to-reward along with placing trades. For help on how to use the bot, send the /help command for bot instructions and example trades.
 
+# Features 💡
+
 # License 📝
 &copy; 2022 Tosin Ogunjobi. All rights reserved.
 
