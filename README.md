@@ -80,6 +80,12 @@ If at any point you decide to make a change to any of the environment variables,
 **Congratulations!** 🥳 If you followed these steps correctly, you should now be able to open a conversation with your bot on Telegram and calculate trade risk-to-reward along with placing trades. For help on how to use the bot, send the /help command for bot instructions and example trades.
 
 # Features 💡
+- Copy trades directly from Signal providers or personal analysis 
+- Interact with MetaAPI to retrieve MT4/MT5 account information (Balance, Equity, Open Positions, etc.)
+- Place all 6 order type trades from Telegram bot (Market Buy/Sell, Limit Buy/Sell, Buy/Sell Stop)
+- Calcualte risk-to-reward using stop loss and take profit and display size in pips and profit/loss (USD)
+- Place up to two take profits and use half position size for each to maintain risk-to-reward ratio
+- Future Features: Trade confirmation, multiple TPs, trailing stop loss
 
 # License 📝
 &copy; 2022 Tosin Ogunjobi. All rights reserved.
