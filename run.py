@@ -18,7 +18,7 @@ TOKEN = os.environ.get("TOKEN")
 TELEGRAM_USER = os.environ.get("TELEGRAM_USER")
 
 # Heroku Credentials
-APP_NAME = os.environ.get("APP_NAME")
+APP_URL = os.environ.get("APP_URL")
 
 # Port number for Telegram bot web hook
 PORT = int(os.environ.get('PORT', '8443'))
@@ -398,7 +398,7 @@ def main() -> None:
     dp.add_error_handler(error)
     
     # listens for incoming updates
-    updater.start_webhook(listen="0.0.0.0", port=PORT, url_path=TOKEN, webhook_url=APP_NAME + TOKEN)
+    updater.start_webhook(listen="0.0.0.0", port=PORT, url_path=TOKEN, webhook_url=APP_URL + TOKEN)
     updater.idle()
 
     return
