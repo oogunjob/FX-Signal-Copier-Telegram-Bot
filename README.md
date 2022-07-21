@@ -71,7 +71,8 @@ Return to terminal and log in to Heroku app to initialize repository and deploy.
 heroku login
 git init
 heroku git:remote -a "INSERT NAME OF APP HERE"
-git commit -am "first deployment"
+git add .
+git commit -m "first deployment"
 git push heroku master
 ```
 
