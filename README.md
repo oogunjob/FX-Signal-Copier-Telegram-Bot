@@ -39,6 +39,8 @@ python3 -m venv fx_telegram_bot
 ```bash
 Linux/MacOS: source fx_telegram_bot/bin/activate
 Windows: source fx_telegram_bot/Scripts/activate
+
+# Windows users can run the ./activate command in fx_telegram_bot/Scripts if Git Bash is not used
 ```
 
 **4. Install pip packagess in virtual environment**
