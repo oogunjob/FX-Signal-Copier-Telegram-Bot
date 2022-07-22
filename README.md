@@ -46,10 +46,8 @@ Windows: source fx_telegram_bot/Scripts/activate
 pip install metaapi_cloud_sdk prettytable python-telegram-bot
 ```
 
-**5. Clone FX Signal Copier Telegram Bot to environment**
-```bash
-git clone https://github.com/oogunjob/FX-Signal-Copier-Telegram-Bot.git
-```
+**5. Download FX Signal Copier Telegram Bot zip file**
+Navigate to the code button at top of this repository and download the FX Signal Copier Telegram Bot as a zip file. Upon downloading, extract the folder to a location and transfer all individual files to telegram_bot/fx_telegram_bot. The individual files must be placed in this folder or the Heroku deployment will be unsuccessful.
 
 **6. Set Up Heroku App**
 
