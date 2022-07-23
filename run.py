@@ -157,7 +157,7 @@ def CreateTable(trade: dict, balance: float, stopLossPips: int, takeProfitPips: 
     table.align["Key"] = "l"  
     table.align["Value"] = "r" 
 
-    table.add_row(['{} Limit'.format(trade['OrderType']) , trade['Symbol']])
+    table.add_row(['{}'.format(trade['OrderType']) , trade['Symbol']])
     table.add_row(['Entry\n', trade['Entry']])
 
     table.add_row(['Stop Loss', '{} pips'.format(stopLossPips)])
