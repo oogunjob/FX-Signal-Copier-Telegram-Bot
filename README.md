@@ -43,7 +43,7 @@ Windows: source fx_telegram_bot/Scripts/activate
 # Windows users can run the ./activate command in fx_telegram_bot/Scripts if Git Bash is not used
 ```
 
-**4. Install pip packagess in virtual environment**
+**4. Install pip packages in virtual environment**
 ```bash
 pip install metaapi_cloud_sdk prettytable python-telegram-bot
 ```
