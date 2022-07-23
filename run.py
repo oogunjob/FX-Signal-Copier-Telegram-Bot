@@ -112,7 +112,7 @@ def GetTradeInformation(update: Update, trade: dict, balance: float) -> None:
     """
 
     # calculates the stop loss in pips
-    if(str(trade['Entry']).index('.') >= 3 or str(trade['Entry']).index('.') >= 2):
+    if(str(trade['Entry']).index('.') >= 2):
         multiplier = 0.01
 
     else:
