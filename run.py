@@ -30,7 +30,7 @@ logger = logging.getLogger(__name__)
 
 
 # allowed FX symbols
-SYMBOLS = ['USDCAD', 'EURJPY', 'EURUSD', 'GBPCAD', 'GBPCHF', 'EURCHF', 'USDCHF', 'EURGBP', 'GBPUSD', 'AUDCAD', 'CADCHF', 'NZDJPY', 'NZDCHF', 'NZDUSD', 'NZDCAD', 'GBPCHF', 'AUDUSD', 'GBPJPY', 'USDJPY', 'CHFJPY', 'CADJPY', 'EURCAD', 'AUDJPY', 'EURAUD', 'AUDNZD', 'XAUUSD', 'XAGUSD', 'EURNZD', 'BTCUSD', 'ETHUSD', 'XRPUSD', 'NOW']
+SYMBOLS = ['USDCAD', 'EURJPY', 'EURUSD', 'GBPCAD', 'GBPCHF', 'EURCHF', 'USDCHF', 'EURGBP', 'GBPUSD', 'AUDCAD', 'CADCHF', 'NZDJPY', 'NZDUSD', 'NZDCAD', 'NZDCHF', 'GBPCHF', 'AUDUSD', 'GBPJPY', 'USDJPY', 'CHFJPY', 'CADJPY', 'EURCAD', 'AUDJPY', 'EURAUD', 'AUDNZD', 'XAUUSD', 'BTCUSD', 'XAGUSD', 'EURNZD', 'NOW']
 
 # RISK FACTOR
 RISK_FACTOR = float(os.environ.get("RISK_FACTOR"))
@@ -39,7 +39,7 @@ RISK_FACTOR = float(os.environ.get("RISK_FACTOR"))
 def ParseSignal(signal: str) -> dict:
     """Starts process of parsing signal and entering trade on MT4 account.
 
-    Args:
+    Arguments:
         signal: trading signal
 
     Returns:
@@ -105,7 +105,7 @@ def ParseSignal(signal: str) -> dict:
 def GetTradeInformation(update: Update, trade: dict, balance: float) -> None:
     """Calculates information from given trade including stop loss and take profit in pips, posiition size, and potential loss/profit.
 
-    Args:
+    Arguments:
         update: update from Telegram
         trade: dictionary that stores trade information
         balance: current balance of the MT4 account
@@ -141,7 +141,7 @@ def GetTradeInformation(update: Update, trade: dict, balance: float) -> None:
 def CreateTable(trade: dict, balance: float, stopLossPips: int, takeProfitPips: int) -> PrettyTable:
     """Creates PrettyTable object to display trade information to user.
 
-    Args:
+    Arguments:
         trade: dictionary that stores trade information
         balance: current balance of the MT4 account
         stopLossPips: the difference in pips from stop loss price to entry price
@@ -190,7 +190,7 @@ def CreateTable(trade: dict, balance: float, stopLossPips: int, takeProfitPips: 
 async def ConnectMT4(update: Update, trade: dict):
     """Attempts connection to MetaAPI and MT4 to place trade.
 
-    Args:
+    Arguments:
         update: update from Telegram
         trade: dictionary that stores trade information
 
@@ -297,7 +297,7 @@ async def ConnectMT4(update: Update, trade: dict):
 def welcome(update: Update, context) -> None:
     """Sends welcome message to user.
 
-    Args:
+    Arguments:
         update: update from Telegram
         context: CallbackContext object that stores commonly used objects in handler callbacks
     """
@@ -313,7 +313,7 @@ def welcome(update: Update, context) -> None:
 def start(update: Update, context) -> None:
     """Starts process of parsing signal and entering trade on MT4 account.
 
-    Args:
+    Arguments:
         update: update from Telegram
         context: CallbackContext object that stores commonly used objects in handler callbacks
     """
@@ -347,7 +347,7 @@ def start(update: Update, context) -> None:
 def help(update: Update, context) -> None:
     """Sends a help message when the command /help is issued
 
-    Args:
+    Arguments:
         update: update from Telegram
         context: CallbackContext object that stores commonly used objects in handler callbacks
     """
@@ -368,7 +368,7 @@ def help(update: Update, context) -> None:
 def error(update: Update, context) -> None:
     """Logs Errors caused by updates.
 
-    Args:
+    Arguments:
         update: update from Telegram
         context: CallbackContext object that stores commonly used objects in handler callbacks
     """
@@ -398,7 +398,7 @@ def main() -> None:
     # log all errors
     dp.add_error_handler(error)
     
-    # listens for incoming updates
+    # listens for incoming updates from Telegram
     updater.start_webhook(listen="0.0.0.0", port=PORT, url_path=TOKEN, webhook_url=APP_URL + TOKEN)
     updater.idle()
 
