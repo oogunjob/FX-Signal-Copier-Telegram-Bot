@@ -330,7 +330,7 @@ def PlaceTrade(update: Update, context: CallbackContext) -> int:
             return TRADE
     
     # attempts connection to MetaTrader and places trade
-    asyncio.run(ConnectMetaTrader(update, context.user_data['trade']), True)
+    asyncio.run(ConnectMetaTrader(update, context.user_data['trade'], True))
     
     # removes trade from user context data
     context.user_data['trade'] = None
@@ -369,7 +369,7 @@ def CalculateTrade(update: Update, context: CallbackContext) -> int:
             return CALCULATE
     
     # attempts connection to MetaTrader and calculates trade information
-    asyncio.run(ConnectMetaTrader(update, context.user_data['trade']), False)
+    asyncio.run(ConnectMetaTrader(update, context.user_data['trade'], False))
 
     # asks if user if they would like to enter or decline trade
     update.effective_message.reply_text("Would you like to enter this trade?\nTo enter, select: /yes\nTo decline, select: /no")
