@@ -14,6 +14,10 @@ This bot is deployed using Heroku.
 
 # Installation ⚒️
 
+Below is a YouTube video demonstrating step-by-step how to download and install the bot.
+
+**YouTube Download Instructions:** https://youtu.be/QTCco30M3BY 
+
 Prerequisites:
 - Telegram Account 
 - Python 3 or higher (https://www.python.org/downloads/)
