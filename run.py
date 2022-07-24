@@ -352,7 +352,8 @@ def help(update: Update, context) -> None:
         context: CallbackContext object that stores commonly used objects in handler callbacks
     """
 
-    help_message = "This bot is used to automatically enter trades onto your MT4 account directly from Telegram. To begin, ensure that you are authorized to use this bot by adjusting your Python script or environment variables. You can then proceed by entering a trade.\n\nThis bot support all trade order types (Market Execution, Limit, and Stop)\n\nAfter an extended period away from the bot, please be sure to re-enter the start command to restart the connection to your MT4 account."
+    help_message = "This bot is used to automatically enter trades onto your MT4 account directly from Telegram. To begin, ensure that you are authorized to use this bot by adjusting your Python script or environment variables.\n\nThis bot support all trade order types (Market Execution, Limit, and Stop)\n\nAfter an extended period away from the bot, please be sure to re-enter the start command to restart the connection to your MT4 account."
+    commands = "List of commands:\n/start : displays welcome message\n/help : displays list of commands and example trades\n/trade : takes in user inputted signal for parsing and trade placement\n/calculate : calculates trade information for a user inputted trade"
     trade_example = "Example Trades 💴:\n\n"
     market_execution_example = "Market Execution:\nBUY GBPUSD\nEntry NOW\nSL 1.14336\nTP 1.28930\nTP 1.29845\n\n"
     limit_example = "Limit Execution:\nBUY LIMIT GBPUSD\nEntry 1.14480\nSL 1.14336\nTP 1.28930\n\n"
@@ -360,6 +361,7 @@ def help(update: Update, context) -> None:
 
     # sends messages to user
     update.effective_message.reply_text(help_message)
+    update.effective_message.reply_text(commands)
     update.effective_message.reply_text(trade_example + market_execution_example + limit_example + note)
 
     return
