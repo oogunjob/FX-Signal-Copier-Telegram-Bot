@@ -14,10 +14,6 @@ This bot is deployed using Heroku.
 
 # Installation ⚒️
 
-Below is a YouTube video demonstrating step-by-step how to download and install the bot.
-
-**YouTube Download Instructions:** https://youtu.be/QTCco30M3BY 
-
 Prerequisites:
 - Telegram Account 
 - Python 3 or higher (https://www.python.org/downloads/)
@@ -44,7 +40,7 @@ python3 -m venv fx_telegram_bot
 Linux/MacOS: source fx_telegram_bot/bin/activate
 Windows: source fx_telegram_bot/Scripts/activate
 
-# Windows users can run the .\activate command in fx_telegram_bot/Scripts if Git Bash is not used
+# Windows users can run the .\fx_telegram_bot\Scripts\activate command if Git Bash is not used
 ```
 
 **4. Install pip packages in virtual environment (Optional)**
