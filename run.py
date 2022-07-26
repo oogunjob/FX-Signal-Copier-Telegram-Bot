@@ -319,7 +319,7 @@ def PlaceTrade(update: Update, context: CallbackContext) -> int:
 
             # sets the user context trade equal to the parsed trade
             context.user_data['trade'] = trade
-            update.effective_message.reply_text("Trade Successfully Parsed! 🥳\nConnecting to MetaTrader ... (May take a while) ⏰")
+            update.effective_message.reply_text("Trade Successfully Parsed! 🥳\nConnecting to MetaTrader ... \n(May take a while) ⏰")
         
         except Exception as error:
             logger.error(f'Error: {error}')
