@@ -387,7 +387,7 @@ def unknown_command(update: Update, context: CallbackContext) -> None:
         update.effective_message.reply_text("You are not authorized to use this bot! 🙅🏽‍♂️")
         return
 
-    update.effective_message.reply_text("Unknown command. Please use the /help command to view instructions for this bot.")
+    update.effective_message.reply_text("Unknown command. Use /trade to place a trade or /calculate information for a trade. You can also use the /help command to view instructions for this bot.")
 
     return
 
