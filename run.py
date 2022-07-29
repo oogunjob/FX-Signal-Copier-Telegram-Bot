@@ -32,7 +32,7 @@ logger = logging.getLogger(__name__)
 CALCULATE, TRADE, DECISION = range(3)
 
 # allowed FX symbols
-SYMBOLS = ['USDCAD', 'EURJPY', 'EURUSD', 'GBPCAD', 'GBPCHF', 'EURCHF', 'USDCHF', 'EURGBP', 'GBPUSD', 'AUDCAD', 'CADCHF', 'NZDJPY', 'NZDUSD', 'NZDCAD', 'NZDCHF', 'GBPCHF', 'AUDUSD', 'GBPJPY', 'USDJPY', 'CHFJPY', 'CADJPY', 'EURCAD', 'AUDJPY', 'EURAUD', 'AUDNZD', 'XAUUSD', 'BTCUSD', 'XAGUSD', 'EURNZD', 'NOW']
+SYMBOLS = ['AUDCAD', 'AUDCHF', 'AUDJPY', 'AUDNZD', 'AUDUSD', 'CADCHF', 'CADJPY', 'CHFJPY', 'EURAUD', 'EURCAD', 'EURCHF', 'EURGBP', 'EURJPY', 'EURNZD', 'EURUSD', 'GBPAUD', 'GBPCAD', 'GBPCHF', 'GBPJPY', 'GBPNZD', 'GBPUSD', 'NOW', 'NZDCAD', 'NZDCHF', 'NZDJPY', 'NZDUSD', 'USDCAD', 'USDCHF', 'USDJPY', 'XAGUSD', 'XAUUSD']
 
 # RISK FACTOR
 RISK_FACTOR = float(os.environ.get("RISK_FACTOR"))
@@ -114,7 +114,13 @@ def GetTradeInformation(update: Update, trade: dict, balance: float) -> None:
     """
 
     # calculates the stop loss in pips
-    if(str(trade['Entry']).index('.') >= 2):
+    if(trade['Symbol'] == 'XAUUSD'):
+        multiplier = 0.1
+
+    elif(trade['Symbol'] == 'XAGUSD'):
+        multiplier = 0.001
+
+    elif(str(trade['Entry']).index('.') >= 2):
         multiplier = 0.01
 
     else:
