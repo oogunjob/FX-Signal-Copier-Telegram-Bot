@@ -16,7 +16,7 @@ This bot is deployed using Heroku.
 
 Prerequisites:
 - Telegram Account 
-- Python 3 or higher (https://www.python.org/downloads/)
+- Python 3 (https://www.python.org/downloads/)
 - Git (https://git-scm.com/downloads)
 - MetaAPI Account (https://app.metaapi.cloud/sign-up)
 - Heroku Account (https://signup.heroku.com/)
