@@ -160,18 +160,18 @@ def CreateTable(trade: dict, balance: float, stopLossPips: int, takeProfitPips: 
     # creates prettytable object
     table = PrettyTable()
     
-    table.title = 'Trade Information'
+    table.title = "Trade Information"
     table.field_names = ["Key", "Value"]
     table.align["Key"] = "l"  
-    table.align["Value"] = "r" 
+    table.align["Value"] = "l" 
 
-    table.add_row([trade['OrderType'] , trade['Symbol']])
+    table.add_row([trade["OrderType"] , trade["Symbol"]])
     table.add_row(['Entry\n', trade['Entry']])
 
     table.add_row(['Stop Loss', '{} pips'.format(stopLossPips)])
 
     for count, takeProfit in enumerate(takeProfitPips):
-        table.add_row([f'Take Profit {count + 1}', f'{takeProfit} pips'])
+        table.add_row([f'TP {count + 1}', f'{takeProfit} pips'])
 
     table.add_row(['\nRisk Factor', '\n{:,.0f} %'.format(trade['RiskFactor'] * 100)])
     table.add_row(['Position Size', trade['PositionSize']])
@@ -184,7 +184,7 @@ def CreateTable(trade: dict, balance: float, stopLossPips: int, takeProfitPips: 
 
     for count, takeProfit in enumerate(takeProfitPips):
         profit = round((trade['PositionSize'] * 10 * (1 / len(takeProfitPips))) * takeProfit, 2)
-        table.add_row([f'Potential Profit {count + 1}', '$ {:,.2f}'.format(profit)])
+        table.add_row([f'TP {count + 1} Profit', '$ {:,.2f}'.format(profit)])
         
         # sums potential profit from each take profit target
         totalProfit += profit
