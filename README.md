@@ -24,7 +24,7 @@ Prerequisites:
 
 **(For Window Users: It is recommended to use a Git Bash terminal for installation)**
 
-*** YouTube Demonstration: https://www.youtube.com/watch?v=QTCco30M3BY&t=5s ***
+YouTube Demonstration: https://www.youtube.com/watch?v=QTCco30M3BY&t=5s
 
 
 **1. Create a Telegram Bot**
