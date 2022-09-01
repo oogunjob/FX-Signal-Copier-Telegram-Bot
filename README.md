@@ -22,10 +22,9 @@ Prerequisites:
 - Heroku Account (https://signup.heroku.com/)
 - Heroku CLI (https://devcenter.heroku.com/articles/heroku-cli#pre-requisites)
 
+***YouTube Demonstration:*** https://www.youtube.com/watch?v=QTCco30M3BY&t=5s
+
 **(For Window Users: It is recommended to use a Git Bash terminal for installation)**
-
-YouTube Demonstration: https://www.youtube.com/watch?v=QTCco30M3BY&t=5s
-
 
 **1. Create a Telegram Bot**
 
