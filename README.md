@@ -24,6 +24,9 @@ Prerequisites:
 
 **(For Window Users: It is recommended to use a Git Bash terminal for installation)**
 
+*** YouTube Demonstration: https://www.youtube.com/watch?v=QTCco30M3BY&t=5s ***
+
+
 **1. Create a Telegram Bot**
 
 Start a conversation with @BotFather on Telegram and create a new bot with a unique name. Save the given API token.
