@@ -8,6 +8,8 @@ Official REST and WebSocket API documentation for MetaAPI: https://metaapi.cloud
 
 This bot is deployed using Heroku.
 
+<b>UPDATE: AS OF FEBRUARY 18, 2023, THIS REPOSITORY IS A PUBLIC ARCHIVE. THIS VERSION OF THE MT4 FX SIGNAL COPIER TELEGRAM IS NO LONGER MAINTAINED, IT HAS BEEN MOVED TO THE FOLLOWING REPOSITORY HERE: https://github.com/ogunjobiFX/MT4-Forex-Signal-Copier-Telegram-Bot</b>
+
 # Demonstration 🎥
 
 ![ezgif-4-a2f4e1b1a1](https://user-images.githubusercontent.com/54332223/180027398-36ddf07b-0f22-4589-9e02-8bd4031dc27b.gif)
